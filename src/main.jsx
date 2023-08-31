@@ -1,25 +1,33 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AddCoffee from "./components/AddCoffee.jsx";
-import UpdateCoffee from "./components/UpdateCoffee.jsx";
+import AddCoffee from "./components/addCoffee/AddCoffee.jsx";
+import UpdateCoffee from "./components/updateCoffee/UpdateCoffee.jsx";
+import Main from "./layout/Main.jsx";
+import Home from "./components/home/Home.jsx";
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App></App>,
-  },
-  {
-
-    path: "addCoffee",
-    element: <AddCoffee></AddCoffee>,
-  },
-  {
-    path: "updateCoffee",
-    element: <UpdateCoffee></UpdateCoffee>,
-  },
+    element: <Main></Main>,
+    children: [
+      {
+        path:'/',
+        element:<Home></Home>
+      },
+      {
+        path: "addCoffee",
+        element:<AddCoffee></AddCoffee>
+      },
+      {
+        path: "updateCoffee",
+        element: <UpdateCoffee></UpdateCoffee>
+      },
+    ]
+  }
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

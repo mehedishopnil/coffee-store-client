@@ -1,0 +1,59 @@
+.add-coffee-container {
+  margin: 30px 100px;
+  padding: 20px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #f4f3f0;
+}
+.add-coffee-container h2 {
+  color: #374151;
+  font-family: Rancho;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.add-coffee-container p {
+  color: rgba(27, 26, 26, 0.7);
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}
+
+.form-input {
+  width: 350px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+label {
+  color: rgba(27, 26, 26, 0.8);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+}
+
+.photo-input {
+  padding: 30px 0px 0px 120px;
+}
+
+.photo-input input {
+  width: 730px;
+}
+.submit-btn {
+  padding: 20px 0px 0px 120px;
+}
+.submit-btn input {
+  width: 730px;
+  color: #331a15;
+  border-radius: 5px;
+  border: 2px solid #331a15;
+  background: #d2b48c;
+}
