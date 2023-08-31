@@ -3,9 +3,9 @@ import './AddCoffee.css'
 
 const AddCoffee = () => {
   return (
-    <div className='add-coffee-container mt-xl'>
+    <div className='add-coffee-container  grid justify-center mt-xl'>
       <h2 className='text-center'>Add New Coffee</h2>
-      <p>It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout.<br></br> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,<br></br> as opposed to using Content here.</p>
+      <p className=' text-center'>It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
 
       <form>
         <div  className='flex gap-7 justify-center pt-5'>
@@ -52,12 +52,12 @@ const AddCoffee = () => {
         </div>
 
           {/* Third Layer  */}
-        <div className='photo-input'>
+        <div className='photo-input grid justify-center'>
         <label >Photo</label> <br></br>
-        <input className='form-input bg-white' type="text" placeholder='Enter photo URL'/>
+        <input className='form-input  bg-white' type="text" placeholder='Enter photo URL'/>
         </div>
 
-        <div className='submit-btn'>
+        <div className='submit-btn grid justify-center'>
         <input className='form-input bg-white' type="submit" value='Add Coffee'/>
         </div>
       </form>

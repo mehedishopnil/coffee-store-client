@@ -1,8 +1,5 @@
 .header-container{
-    display: grid;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    background-color: bisque;
+    background: url(../../assets/images/more/15.jpg), lightgray 50% / cover no-repeat;
+    height: 60px;
 
 }

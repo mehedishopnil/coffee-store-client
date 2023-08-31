@@ -1,12 +1,12 @@
 .add-coffee-container {
   margin: 30px 100px;
-  padding: 20px;
+  padding: 50px 20px;
   flex-shrink: 0;
   border-radius: 5px;
   background: #f4f3f0;
 }
 .add-coffee-container h2 {
-  color: #374151;
+  color: #4e302a;
   font-family: Rancho;
   font-size: 45px;
   font-style: normal;
@@ -16,6 +16,7 @@
 
 .add-coffee-container p {
   color: rgba(27, 26, 26, 0.7);
+  padding: 0px 300px;
   text-align: center;
   font-family: Raleway;
   font-size: 16px;
@@ -25,7 +26,7 @@
 }
 
 .form-input {
-  width: 350px;
+  width: 400px;
   height: 40px;
   padding-left: 10px;
   border-radius: 5px;
@@ -41,19 +42,28 @@ label {
 }
 
 .photo-input {
-  padding: 30px 0px 0px 120px;
+  padding: 30px 0px 0px px;
+  margin-top: 20px;
 }
 
 .photo-input input {
-  width: 730px;
+  width: 830px;
+  margin-top: -20px;
 }
 .submit-btn {
-  padding: 20px 0px 0px 120px;
+  padding: 20px 0px 0px 0px;
 }
 .submit-btn input {
-  width: 730px;
+  width: 830px;
   color: #331a15;
+  font-weight: 600;
+  font-family: Rancho;
+  font-size: 20px;
   border-radius: 5px;
-  border: 2px solid #331a15;
+  border: 1.5px solid #54352fbd;
   background: #d2b48c;
+}
+
+.submit-btn input:hover{
+    background-color:#ae9068 ;
 }
