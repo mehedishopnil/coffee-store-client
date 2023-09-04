@@ -1,5 +1,17 @@
 .header-container{
     background: url(../../assets/images/more/15.jpg), lightgray 50% / cover no-repeat;
     height: 60px;
+    z-index: 0;
 
+}
+
+.logo-img{
+    position:relative;
+    background: url(../../assets/images/more/logo1.png), lightgray 50% / cover no-repeat;
+    z-index: 2;
+}
+
+.logo{
+    font-family: Rancho;
+    font-size: 35px;
 }
