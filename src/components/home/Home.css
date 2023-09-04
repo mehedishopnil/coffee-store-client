@@ -1,0 +1,30 @@
+.popular-products {
+background-image: url("../../assets/images/more/1.png");
+background-repeat: no-repeat;
+background-size: 1400px 800px;
+  border: 1.5px solid #331a1521;
+  padding: 20px;
+  margin: 20px 0px;
+  border-radius: 15px;
+}
+
+.popular-products h1 {
+  color: #331a15;
+  font-family: Rancho;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (min-width: 1280px) {
+  .home-body {
+    padding: 0px 100px; 
+  }
+}
+@media screen and (max-width: 1280px) {
+  .popular-products{
+    background-repeat: no-repeat;
+background-size: 1100px 750px;
+  }
+}
