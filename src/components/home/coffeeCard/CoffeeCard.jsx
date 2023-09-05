@@ -1,5 +1,6 @@
 import React from "react";
 import "./CoffeeCard.css";
+import { Link } from "react-router-dom";
 
 const CoffeeCard = ({ coffee }) => {
   const { name, details, category, _id, taste, supplier, quantity, photoUrl } =
@@ -38,9 +39,11 @@ const CoffeeCard = ({ coffee }) => {
               {quantity}
             </p>
           </div>
-          
+
           <div className="">
-            
+            <button className=" card-btn">View</button>
+            <Link to={'/updateCoffee'}><button className="card-btn">Edit</button></Link>
+            <button className="card-btn">X</button>
           </div>
         </div>
       </div>
