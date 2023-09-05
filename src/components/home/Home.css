@@ -1,7 +1,68 @@
+/* Top banner Section */
+.top-banner {
+  background-image: url("../../assets/images/more/3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 550px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.top-banner-info {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+}
+
+.banner-info {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.banner-info h1 {
+  color: #fff;
+  font-family: Rancho;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.banner-info p{
+    font-size: 14px;
+    width: 80%; 
+}
+
+.learn-more{
+    display: flex;
+  justify-content: center;
+  color: #331a15;
+  font-family: Rancho;
+  font-size: 22px;
+  padding: 5px 10px;
+  font-style: normal;
+  margin-left: -450px;
+  margin-top: 20px;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 5px;
+  border: 2px solid #661100;
+  background: #e3b577;
+}
+
+.learn-more:hover{
+    color: white;
+    border:2px solid #971a01;
+}
+
+/* Popular Products Section CSS */
 .popular-products {
-background-image: url("../../assets/images/more/1.png");
-background-repeat: no-repeat;
-background-size: 1400px 800px;
+  background-image: url("../../assets/images/more/1.png");
+  background-repeat: no-repeat;
+  background-size: 1400px 800px;
   border: 1.5px solid #331a1521;
   padding: 20px;
   margin: 20px 0px;
@@ -17,14 +78,42 @@ background-size: 1400px 800px;
   line-height: normal;
 }
 
+.add-coffee-link {
+  display: flex;
+  justify-content: center;
+}
+.add-coffee-button {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-family: Rancho;
+  font-size: 22px;
+  padding: 5px 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 5px;
+  border: 2px solid #331a15;
+  background: #e3b577;
+}
+.add-coffee-button:hover {
+  color: #331a15;
+}
+
 @media screen and (min-width: 1280px) {
-  .home-body {
-    padding: 0px 100px; 
+  .popular-product-body {
+    padding: 0px 100px;
+  }
+
+  .top-banner {
+    margin-top: -200px;
+    width: 1717.5px;
+    height: 910px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .popular-products{
+  .popular-products {
     background-repeat: no-repeat;
-background-size: 1100px 750px;
+    background-size: 1100px 750px;
   }
 }

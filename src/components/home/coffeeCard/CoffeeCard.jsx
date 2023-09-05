@@ -38,10 +38,9 @@ const CoffeeCard = ({ coffee }) => {
               {quantity}
             </p>
           </div>
+          
           <div className="">
-            <div className="card-actions justify-end -me-5">
-              <button className="btn btn-primary">Watch</button>
-            </div>
+            
           </div>
         </div>
       </div>
