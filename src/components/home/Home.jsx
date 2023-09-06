@@ -1,10 +1,11 @@
 import { Link, useLoaderData } from "react-router-dom";
 import "./Home.css";
 import CoffeeCard from "./coffeeCard/CoffeeCard";
+import { useState } from "react";
 
 const Home = () => {
-  const coffees = useLoaderData();
-  console.log(coffees.name);
+  const loadedCoffees = useLoaderData();
+  const [coffees, setCoffees] = useState(loadedCoffees)
 
   return (
     <div className="home-body ">
@@ -29,7 +30,12 @@ const Home = () => {
         <Link className="add-coffee-link" to={'addCoffee'}><button className="add-coffee-button">Add Coffee</button></Link>
         <div className="grid grid-cols-2 gap-5 my-8">
           {coffees.map((coffee) => (
-            <CoffeeCard key={coffee._id} coffee={coffee}></CoffeeCard>
+            <CoffeeCard 
+            key={coffee._id} 
+            coffee={coffee}
+            coffees = {coffees}
+            setCoffees = {setCoffees}
+            ></CoffeeCard>
           ))}
         </div>
       </section>

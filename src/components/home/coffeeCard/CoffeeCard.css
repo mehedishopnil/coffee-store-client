@@ -17,7 +17,7 @@
 
 .card-btn{
    
-    padding: 5px 15px;
+    padding: 5px 0px;
     width: 50px;
     margin-top: 10px;
     font-size: 12px ;
@@ -30,3 +30,19 @@
 .card-btn:hover{
     background-color: #ffb7a8;
 }
+
+.card-delete-btn{
+    padding: 5px 0px;
+    width: 50px;
+    margin-top: 10px;
+    font-size: 12px ;
+    color: #ffffff;
+    background-color: red;
+    border: 1px solid #ffb7a8;
+    border-radius: 10px;
+}
+
+.card-delete-btn:hover{
+    background-color: rgb(229, 15, 15);
+}
+
